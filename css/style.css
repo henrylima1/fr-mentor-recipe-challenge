@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit';
+}
+
+section {
+    width: 800px;
+    background-color: white;
+    margin: 80px auto 15px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+section img {
+    width: 740px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+section h1 {
+    font-family: 'Young Serif';
+    text-align: center;
+}
+
+section p {
+    font-family: 'Outfit';
+    margin: 10px 0px 10px 0px;
+    text-align: justify;
+}
+
+section h2 {
+    font-family: 'Young Serif';
+    font-size: 1.3em;
+}
+
+section h2.preparation-time {
+    color: hsl(332, 51%, 32%);
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px 15px 0px 0px;
+    padding: 0px 30px 0px 30px;
+}
+
+section ul.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+section ul.preparation-time strong {
+    color: hsl(24, 5%, 18%);
+}
+
+section ul.preparation-time li {
+    margin-left: 50px;
+    list-style: none;
+}
+
+section ul.preparation-time li::before {
+    content: "•";
+    color: hsl(332, 51%, 32%);
+    display: inline-block;
+    width: 30px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+section h2.ingredients {
+    color: hsl(14, 45%, 36%);
+    margin: 20px 0px 20px 0px;
+}
+
+section ul.ingredients {
+    padding: 15px;
+}
+
+section ul.ingredients li {
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+section ul.ingredients li::before {
+    content: "•";
+    color: hsl(332, 51%, 32%);
+    display: inline-block;
+    width: 30px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+section h2.instructions {
+    color: hsl(14, 45%, 36%);
+    margin: 10px 0px 10px 0px;
+}
+
+section ol.instructions {
+    padding: 15px;
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+section ol.instructions li {
+    padding-bottom: 5px;
+}
+
+section ol.instructions li::before {
+    counter-increment: list-counter;
+    content: counter(list-counter) ".";
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 20px;
+    font-weight: bolder;
+}
+
+section h2#nutrition {
+    color: hsl(14, 45%, 36%);
+}
