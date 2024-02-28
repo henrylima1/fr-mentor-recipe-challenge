@@ -132,3 +132,25 @@ section ol.instructions li::before {
 section h2#nutrition {
     color: var(--nutmeg);
 }
+
+section table#nutrition {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+section table, th, td {
+    border: none;
+}
+
+section > table, th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+section > table strong {
+    color: var(--nutmeg);
+}
